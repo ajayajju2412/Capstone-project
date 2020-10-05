@@ -1,0 +1,39 @@
+.navbar-custom { 
+    background-color: #007bff; 
+} 
+
+.btn{
+    color: white;
+    text-decoration: none;
+}
+
+.btn:hover{
+    text-decoration: none;
+    background-color: #007bff;
+}
+
+.btn:active:visited{
+    background-color: #007bff;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.has-search .form-control {
+    //display: block;
+    
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 25rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: right;
+    pointer-events: none;
+    color:  #007bff;
+}

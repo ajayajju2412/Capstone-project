@@ -153,3 +153,10 @@ a.dropdown-item:focus,  a.dropdown-item:active{
 
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
+
+//my styles
+.modal-backdrop {
+  /* fixing - no overlay */    
+  display: none;  
+}
+

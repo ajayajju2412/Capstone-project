@@ -1,0 +1,39 @@
+<nav class="navbar sticky-top navbar-custom navbar-expand-sm navbar-dark">
+    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+        <button type="button" class="btn btn-link" [routerLink]="['/products']"><i class="fa fa-shopping-cart fa-lg"></i> upGrad Eshop</button>
+    </div>
+
+    <div class="navbar-collapse collapse w-100 order-2  dual-collapse2 justify-content-center align-items-center form-group has-search">
+            <span class="fa fa-search form-control-feedback"></span>
+        <input class="form-control form-control-sm" type="text" placeholder="Type to search Products" aria-label="Search">
+
+    </div>
+
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+            <!-- <li class="nav-item active"><button type="button" class="btn btn-link"><i class="fa fa-user"></i> Account</button></li> -->
+            <li class="nav-item active">
+                <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fa fa-user fa-lg"></i> Account
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" (click)="showModal()">Sign In</a>
+                </div>
+              </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Modal -->
+<div *ngIf="isModalShown" [config]="{ show: true }" (onHidden)="onHidden()" bsModal #signinModal="bs-modal"
+     class="modal fade" tabindex="-1" role="dialog" aria-labelledby="dialog-auto-name" data-keyboard="true" data-backdrop="static">
+  <div class="myModal modal-dialog modal-dialog-scrollable" >
+    <div class="modal-content" >
+      <div class="modal-body">
+        <app-sign-in-modal></app-sign-in-modal>
+      </div>
+    </div>
+  </div>
+</div>
