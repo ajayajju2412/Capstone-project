@@ -11,7 +11,7 @@ export class SignInModalComponent implements OnInit {
   displaySignUp: boolean;
   
   signin(){
-    this.displaySignIn = true;
+    this.displaySignIn = true; 
     this.displaySignUp = false;
   }
   signup(){

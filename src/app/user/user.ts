@@ -6,4 +6,6 @@ export class User {
     username: String;
     password: string;
     confirmPassword: string;
+
+    jwtToken: string;
 }
